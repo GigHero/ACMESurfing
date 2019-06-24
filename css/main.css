@@ -1,0 +1,20 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.jb-font{
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+.footer{
+    background-image: linear-gradient(to top,  #080a6780 0%, #17a2b8 90%);
+}
+.navbar{
+    background-image: linear-gradient(to top,  #17a2b8 0%,#080a6759  100%);
+}
+.mapa{
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
