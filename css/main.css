@@ -12,17 +12,20 @@ html, body {
     background-image: linear-gradient(to top,  #080a6780 0%, #17a2b8 90%);
 }
 .navbar{
-    background-image: linear-gradient(to top,  #17a2b8 0%,#080a6759  100%);
-    font-size: 15pt; 
-    font-color: black;
+    background-image: black;
+    font-size: 23px;  
 }
+.navbar li:hover { 
+    font-size: 21px;
+    border-bottom: #666 solid 2px;
+    display: block;
+  }
 .mapa{
     padding: 20px 0 20px 0;
     text-align: center;
 }
-.banner{
-    border: 1px solid black;
-    background: url('img/wall1.jpg') no-repeat; 
-    width: auto;
-    height: 400px;
+
+.bg-img{
+    background: url('../img/wall9.png') no-repeat; 
+    background-size: cover;
 }

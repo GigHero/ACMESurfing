@@ -11,44 +11,47 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 
-    <title>Acme Surf</title>
+    <title>Acme Surfboards</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light p-4 bg-info">
-            <a class="navbar-brand" href="index.html"><font face="Rubik Mono One">ACME</font><font face="Shadows Into Light">SURFBOARD</font></a>
+        <nav class="navbar navbar-expand-lg navbar-light p-4 border-bottom">
+            <a class="navbar-brand" href="index.html"><font face="Rubik Mono One">ACME</font><font face="Shadows Into Light">SURFBOARDs</font></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
             </button>
-        
-                <div class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav mr-left">
-                        <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="produtos.html">Produtos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="comochegar.html">Como Chegar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
-                        </li>                                        
-                    </ul>
-                </div>  
-            </nav>
-            <div class="container mt-3">
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav mr-left">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html"><font face="Stylish">Home</font><span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="produtos.html"><font face="Stylish">Produtos</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html"><font face="Stylish">Sobre</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comochegar.html"><font face="Stylish">Como Chegar</font></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html"><font face="Stylish">Contato</font></a>
+                    </li>                                        
+                </ul>
+            </div> 
+        </nav>
+            <div class="container mt-3 mb-3">
             <h1 class="text-center">Contato</h1>
             <hr>
-                <form class="">
+ <!--               <form class="needs-validation" novalidate>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">Email</label>
-                      <input type="email" class="form-control" placeholder="Email">
+                      <input type="email" class="form-control" id="validationCustom01" placeholder="Email">
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputPassword4">Assunto</label>
@@ -69,17 +72,103 @@
                   </div>
                   <button type="submit" class="btn btn-info col-2"> Enviar</button>
                 </form>
+            </div>       
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>   
+    -->
+    <form class="needs-validation" novalidate>
+      <div class="form-row d-flex justify-content-center">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom01">Nome</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
+          <div class="valid-feedback">
+            Tudo Ok!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom02">Email</label>
+          <input type="email" class="form-control" id="validationCustom02" placeholder="seuemail@exemplo.com" required>
+          <div class="valid-feedback">
+            Tudo Ok!
+          </div>
+        </div>
+      </div>
+      <div class="form-row d-flex justify-content-center">
+        <div class="col-md-4 mb-3">
+          <label for="validationCustom03">Assunto</label>
+          <input type="text" class="form-control" id="validationassunto" placeholder="Oque você deseja?" required>
+          <div class="invalid-feedback">
+            Por favor informe o motivo de seu contato.
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationTelefone">Telefone</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="validationTelefone" placeholder="(00) 0000-0000" required>
+            <div class="invalid-feedback">
+              Telefone errado, verifique por favor.
             </div>
-        <footer class="footer mt-auto py-3 bg-info fixed-bottom">
-            <div class="container">
-                <span class="text-light">
-                        <i class="material-icons">copyright</i>
-                        Acme SurfBoards
-                        <i class="material-icons">copyright</i>
-                    </span>
-            </div>
-        </footer>       
-       
+          </div>
+        </div>
+      </div>
+      <div class="form-row d-flex justify-content-center">
+        <div class="form-group col-8 ">
+          <label for="exampleFormControlTextarea1">Mensagem</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="form-row d-flex justify-content-center">
+        <button type="submit" class="btn btn-info col-2"> Enviar Contato</button>
+      </div>
+    </form>
+    </div>
+    <footer class="footer mt-auto py-3 bg-info">
+      <div class="container">
+          <span class="text-light">
+                  <i class="material-icons">copyright</i>
+                  Acme SurfBoards
+                  <i class="material-icons">copyright</i>
+              </span>
+      </div>
+  </footer>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
