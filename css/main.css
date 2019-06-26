@@ -13,8 +13,16 @@ html, body {
 }
 .navbar{
     background-image: linear-gradient(to top,  #17a2b8 0%,#080a6759  100%);
+    font-size: 15pt; 
+    font-color: black;
 }
 .mapa{
     padding: 20px 0 20px 0;
     text-align: center;
+}
+.banner{
+    border: 1px solid black;
+    background: url('img/wall1.jpg') no-repeat; 
+    width: auto;
+    height: 400px;
 }
